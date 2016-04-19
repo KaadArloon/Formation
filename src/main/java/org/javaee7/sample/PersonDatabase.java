@@ -10,7 +10,7 @@ import javax.ws.rs.NotFoundException ;
 @Singleton
 public class PersonDatabase {
 
-    List<Person> persons;
+    List<Person> persons ;
 
     @PostConstruct
     public void init() {
@@ -26,14 +26,14 @@ public class PersonDatabase {
     }
 
     public Person[] currentList() {
-        return persons.toArray(new Person[0]);
+        return persons.toArray(new Person[0]) ;
     }
 
     public Person getPerson(int id) {
         if (id < persons.size()) {
-            return persons.get(id);
+            return persons.get(id) ;
         }
 
-        throw new NotFoundException("Person with id \"" + id + "\" not found.");
+        throw new NotFoundException("Person with id \"" + id + "\" not found.") ;
     }
 }
