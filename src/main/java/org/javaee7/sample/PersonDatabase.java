@@ -1,16 +1,16 @@
-package org.javaee7.sample;
+package org.javaee7.sample ;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.Arrays ;
+import java.util.List ;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Singleton;
-import javax.ws.rs.NotFoundException;
+import javax.annotation.PostConstruct ;
+import javax.inject.Singleton ;
+import javax.ws.rs.NotFoundException ;
 
 @Singleton
 public class PersonDatabase {
 
-    List<Person> persons;
+    List<Person> persons ;
 
     @PostConstruct
     public void init() {
