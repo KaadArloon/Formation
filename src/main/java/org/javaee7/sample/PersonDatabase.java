@@ -15,21 +15,21 @@ public class PersonDatabase {
     @PostConstruct
     public void init() {
         persons = Arrays.asList(
-                new Person("Penny"), 
-                new Person("Leonard"), 
-                new Person("Sheldon"), 
-                new Person("Amy"), 
-                new Person("Howard"), 
-                new Person("Bernadette"), 
-                new Person("Raj"), 
-                new Person("Priya")) ;
+                new Person( "Penny"), 
+                new Person( "Leonard"), 
+                new Person( "Sheldon"), 
+                new Person( "Amy"), 
+                new Person( "Howard"), 
+                new Person( "Bernadette"), 
+                new Person( "Raj"), 
+                new Person( "Priya")) ;
     }
 
-    public Person[] currentList() {
+    public Person[  ] currentList(  ) {
         return persons.toArray(new Person[0]) ;
     }
 
-    public Person getPerson(int id) {
+    public Person getPerson( int id ) {
         if (id < persons.size()) {
             return persons.get(id) ;
         }
