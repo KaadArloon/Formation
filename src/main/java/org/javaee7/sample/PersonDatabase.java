@@ -15,14 +15,14 @@ public class PersonDatabase {
     @PostConstruct
     public void init() {
         persons = Arrays.asList(
-                new Person( "Penny"), 
-                new Person( "Leonard"), 
-                new Person( "Sheldon"), 
-                new Person( "Amy"), 
-                new Person( "Howard"), 
-                new Person( "Bernadette"), 
-                new Person( "Raj"), 
-                new Person( "Priya")) ;
+                new Person( "Penny" ), 
+                new Person( "Leonard" ), 
+                new Person( "Sheldon" ), 
+                new Person( "Amy" ), 
+                new Person( "Howard" ), 
+                new Person( "Bernadette" ), 
+                new Person( "Raj" ), 
+                new Person( "Priya" )) ;
     }
 
     public Person[  ] currentList(  ) {
