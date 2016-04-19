@@ -4,8 +4,8 @@ import java.util.Arrays ;
 import java.util.List ;
 
 import javax.annotation.PostConstruct ;
-import javax.inject.Singleton;
-import javax.ws.rs.NotFoundException;
+import javax.inject.Singleton ;
+import javax.ws.rs.NotFoundException ;
 
 @Singleton
 public class PersonDatabase {
@@ -22,7 +22,7 @@ public class PersonDatabase {
                 new Person("Howard"), 
                 new Person("Bernadette"), 
                 new Person("Raj"), 
-                new Person("Priya"));
+                new Person("Priya")) ;
     }
 
     public Person[] currentList() {
