@@ -22,18 +22,18 @@ public class PersonDatabase {
                 new Person("Howard"), 
                 new Person("Bernadette"), 
                 new Person("Raj"), 
-                new Person("Priya"));
+                new Person("Priya")) ;
     }
 
     public Person[] currentList() {
-        return persons.toArray(new Person[0]);
+        return persons.toArray(new Person[0]) ;
     }
 
     public Person getPerson(int id) {
         if (id < persons.size()) {
-            return persons.get(id);
+            return persons.get(id) ;
         }
 
-        throw new NotFoundException("Person with id \"" + id + "\" not found.");
+        throw new NotFoundException("Person with id \"" + id + "\" not found.") ;
     }
 }
